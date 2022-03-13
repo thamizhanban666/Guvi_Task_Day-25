@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dictionary</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container bg-light">
+   <nav class="navbar navbar-light bg-success rounded-3">
+   <div class="container-fluid">
+      <a class="navbar-brand text-light fs-3">Dictionary</a>
+      <div class="d-flex">
+         <input id="searchBox" class="form-control me-2 border border-2 border-secondary rounded-pill" type="search" placeholder="Search" aria-label="Search">
+         <button id="btnSearch" class="btn btn-outline-primary btn-secondary text-light rounded-3 border border-2 border-light" type="submit" onclick="searchBtnClick()" >Search</button>
+      </div>
+   </div>
+   </nav>
+
+   <div id="div" class="container">
+      <p class="fs-4 text-center text-secondary my-3">Search for a word in the above search box to find it in my dictionary...</p>
+   </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
