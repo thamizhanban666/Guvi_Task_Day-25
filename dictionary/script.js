@@ -80,7 +80,7 @@ let searchBtnClick = () => {
             if (m.synonyms.length > 0) {
                let divSynonyms = document.createElement("div");
                divSynonyms.classList.add();
-               divSynonyms.innerHTML = `<span class="fs-5 fst-italic">Synonyms</span > :  ${m.synonyms}`;
+               divSynonyms.innerHTML = `<span class="fs-5 fst-italic">Synonyms</span > : <span class="text-break"> ${m.synonyms}</span >`;
                content.appendChild(divSynonyms);
                              
             }
