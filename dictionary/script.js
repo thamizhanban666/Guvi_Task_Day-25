@@ -43,14 +43,14 @@ let searchBtnClick = () => {
       divWord.innerHTML = `<span class="fs-5 fst-italic">Word</span> :  ${arrObj[0].word}`;
       content.appendChild(divWord);
 
-      // To print the phonetics
+      // To print the audio controls
       if (arrObj[0].hasOwnProperty("phonetics")) {
          arrObj[0].phonetics.map((e,i) => {
-            if (e.hasOwnProperty("text")) {
-               let divPhonetic = document.createElement("div");
-               divPhonetic.classList.add();
-               divPhonetic.innerHTML = `<span class="fs-5 fst-italic">Phonetic</span> :  ${e.text}}`;
-               content.appendChild(divPhonetic);
+            if (e.hasOwnProperty("audio")) {
+               let divAudio = document.createElement("div");
+               divAudio.classList.add("d-flex","mt-3");
+               divAudio.innerHTML = `<span class="fs-5 fst-italic my-auto me-3">Hear </span> <audio controls > <source src="${e.audio}" type="audio/mpeg"></audio> `;
+               content.appendChild(divAudio);
                arrObj[0].phonetics.splice(i);
             }
          })
@@ -80,7 +80,7 @@ let searchBtnClick = () => {
             if (m.synonyms.length > 0) {
                let divSynonyms = document.createElement("div");
                divSynonyms.classList.add();
-               divSynonyms.innerHTML = `<span class="fs-5 fst-italic">Synonyms</span> :  ${m.synonyms}`;
+               divSynonyms.innerHTML = `<span class="fs-5 fst-italic">Synonyms</span > :  ${m.synonyms}`;
                content.appendChild(divSynonyms);
                              
             }
