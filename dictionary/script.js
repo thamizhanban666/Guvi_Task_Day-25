@@ -89,7 +89,7 @@ let searchBtnClick = () => {
             if (m.antonyms.length > 0) {
                let divAntonyms = document.createElement("div");
                divAntonyms.classList.add();
-               divAntonyms.innerHTML = `<span class="fs-5 fst-italic">Antonyms</span> :  ${m.antonyms}`;
+               divAntonyms.innerHTML = `<span class="fs-5 fst-italic">Antonyms</span> : <span class="text-break"> ${m.antonyms}</span >`;
                content.appendChild(divAntonyms);
                              
             }
